@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/home.css">
     <link rel="stylesheet" href="/static/css/about.css">
@@ -15,28 +17,90 @@
 
 <body>
     <div class="contens">
+        <div class="open">
+            <div class="layer">
+                Puru
+            </div>
+            <div class="layer">
+                Professional
+            </div>
+        </div>
         <nav class="navbar" id="navbar">
             <div id="logo">
-                <a href="#home" rel="noopener noreferrer">
+                <a href="#home">
                     <img src="/static/img/logo/logo2.png" alt="no img" srcset="">
                 </a>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#login">Login/Singup</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#newWorld">New World</a></li>
+                <li>
+                    <a href="login.html">
+                        <span class="login"></span> Login / Singup
+                    </a>
+                </li>
             </ul>
         </nav>
         <section class="home" id="home">
-            <div class = "homes">
-        
-            <p class="p">"I Blieve In Support,</p>
-            <p class="p1">When They Doing Efforts"</p>
-                <p>-Purushottam</p>
+
+            <div class="homes">
+                <p class="p">"I Believe In Support,</p>
+                <p class="p1">When They Doing Efforts"</p>
+                <p class="left">-Purushottam</p>
+            </div>
+            <div id="cursor"></div>
+
+        </section>
+        <section class="contact" id="contact">
+            <div class="headingContact">
+                <h3 style="font-family: 'Fuzzy Bubbles', cursive;">Hey! Dude Wanna Join Me Before We Go-(Let's Go)</h3>
+                <div class="conts">
+                    <form action="\" method="post">
+                        <table>
+                            <tr>
+                                <td><input type="text" style="border-radius:8px 8px 0px 0px;" name="fName" id="fName" placeholder="ENTER YOUR NAME"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" name="fName" id="fName" placeholder="ENTER YOUR PHONE NUMBER"></td>
+                            </tr>
+                            <tr>
+
+                                <td><input type="email" name="fName" id="fName" placeholder="ENTER YOUR @ EMAIL"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="fName" id="fName" placeholder="RELATIVE / REASON FOR JONING ME"></td>
+                            </tr>
+
+                            <tr>
+                                <td><textarea id="subject" name="subject" class="special">Erase Me first and Explain Your Reason Here-(Not Compulsory
+                                                            To Write Here)</textarea>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                        <button type="button" class="bottn">submit</button>
+                    </form>
+                </div>
+                <div class="socialArea">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                </div>
+
+            </div>
+            <div class="img">
+            </div>
+            <div class="refrence">
+                <p>Icon From Handshake Clipart PNG Designed By 红尘紫衣 from
+                    <a target="__blank" href="https://pngtree.com/freepng/handshake-gesture_952129.html?sol=downref&id=bef">https://pngtree.com/freepng/handshake-gesture_952129.html?sol=downref&id=bef</a> </p>
             </div>
         </section>
-        <section class="about" id="about">
+        <section id="about">
             <div class="collect">
                 <div class="holdText">
                     You're in my
@@ -49,48 +113,161 @@
 
                 </ul>
             </div>
-            </section>
-        <section class="newworld" id="newworld">
-            <h1>This is Newworld</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis cumque dolorem magni dignissimos, laborum impedit quam soluta tenetur tempora.</p>
         </section>
-        <section class="contact" id="contact">
-            <h1>This is Contact</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet facilis cumque dolorem magni dignissimos, laborum impedit quam soluta tenetur tempora.</p>
+        <section class="about">
+            <div class="frame">
+                <div class="resume"> RESUME </div>
+                <hr>
+                <div class="headResume">
+                    <div class="fname">Purushottam</div>
+                    <div class="email">rbose7375@gmail.com,+91-9716754099,8510029956
+                    </div>
+                    <div class="phoneNumber">E-737-b,Nandgram,Ghaziabad,u.p (201003)</div>
+                </div>
+                <hr>
+                <div class="summary">Summary</div>
+                <hr>
+                <div class="summaryBody">
+                    To secure employment as a software engineer/ web developer to utilize my software installation and configuration skills to meet the requirements of company clients and being a best leader for my team to take all over responsibilities of my team always
+                    supported to every one until front of one is also efforts on itself. - “I believe in support when they doing efforts.”
+                </div>
+                <hr>
+                <div class="education">Education</div>
+                <hr>
+                <div class="btech">B. Tech - Bachelor of Technology (Computer science) <span>73%</span>
+                    <P>Sanskar college of engineering and technology, Ghaziabad <span>Aug, 2021
+                </span></p>
+                </div>
+                <div class="t12th">Class XII (UP Board) <span>50% </span>
+                    <P>S.S.D Inter College, Ghaziabad <span> May, 2017</span></p>
+                </div>
+                <div class="t10th">Class X (UP Board) <span> 70%</span>
+                    <P>S.S.D Inter College, Ghaziabad <span> May, 2015</span></p>
+                </div>
+                <hr>
+                <div class="project">INTERNSHIP & PROJECTS
+                    <hr>
+                    <div class="gbm">Full Stack Developer <span> - Golden Beacon Media</span>
+                        <P>Developing website from python, Django and managing their Database in my sqlite3. Django is web framework which is a module of python.
+                        </p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="skills">ADDITIONAL INFORMATION
+                    <hr>
+                    <div class="skill">Technical Skills:
+                        <div class="value">
+                            <p>Microsoft Office, C, Python, Django, Block Chain, HTML,CSS,Javascript,Shopify, Android Studio, Computer Hardware,Hardware Assembling. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- <a href="#" class="presonalButton" > <spa id="personalButton"><span></span></spa></a> -->
+            <div class="seprate">
+                <a href="#" class="presonalButton">
+                    <bro>personal detail</bro>
+                </a>
+            </div>
+        </section>
+        <section class="newworld" id="newWorld">
+            <div class="newContent">
+                <div class="fourSet">
+                    <a href="#">
+                        <div class="gallary">
+                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <div class="nameData">Gallary</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallary">
+                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <div class="nameData">Gallary</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallary">
+                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <div class="nameData">Gallary</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallary">
+                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <div class="nameData">Gallary</div>
+                        </div>
+                    </a>
+
+
+                </div>
+
+            </div>
         </section>
         <section class="foot" id="footer">
             <footer>
                 <table>
-                    <thead>
-                        <tr>
-                            <ul>
-                                <td>
-                                    <li>
-                                        <a href="#home"> Home </a>
-                                    </li>
-                                </td>
-                                <td>
-                                    <li>
-                                        <a href="#about"> About </a>
-                                    </li>
-                                </td>
-                                <td>
-                                    <li>
-                                        <a href="#contact"> Contact </a>
-                                    </li>
-                                </td>
-                                <td>
-                                    <li>
-                                        <a href="#newworld"> New-World </a>
-                                    </li>
-                                </td>
-                        </tr>
-                        </ul>
-                    </thead>
+                    <tr>
+                        <ul>
+                            <td>
+                                <li>
+                                    <a href="#home"> Home </a>
+                                </li>
+                            </td>
+                            <td>
+                                <li>
+                                    <a href="#about"> About </a>
+                                </li>
+                            </td>
+                            <td>
+                                <li>
+                                    <a href="#contact"> Contact </a>
+                                </li>
+                            </td>
+                            <td>
+                                <li>
+                                    <a href="#newworld"> New-World </a>
+                                </li>
+                            </td>
+                            <td>
+                                <li>
+                                    <a href="login.html">
+                                        <span class="login"></span> Login
+                                    </a>
+                                </li>
+                            </td>
+                    </tr>
+                    <tr>
+                        <div class="socialArea">
+                            <td>
+                            </td>
+                            <td>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </td>
+                            <td>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </td>
+                            <td>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </td>
+                        </div>
+                    </tr>
+                    </ul>
                 </table>
             </footer>
         </section>
     </div>
+    <script src="/static/js/about.js"></script>
+
+    <!-- our aos data -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script> -->
 </body>
 
 </html>

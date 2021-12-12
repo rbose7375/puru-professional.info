@@ -1,11 +1,131 @@
-section#newworld {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    color: yellow;
-    background: url('/static/img/bg/newworl.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-    text-align: center;
-    justify-content: center;
-}
+        section#newWorld {
+            position: relative;
+            display: flex;
+            /* flex-direction: column; */
+            width: 100%;
+            height: 100vh;
+            color: yellow;
+            /* background: url('/static/img/bg/newworl.jpg') no-repeat center center/cover; */
+            background-attachment: fixed;
+            /* text-align: center;
+            justify-content: center; */
+            /* z-index: -5; */
+        }
+        
+        #newWorld::before {
+            content: "";
+            position: absolute;
+            opacity: 1;
+            background: url('/static/img/bg/newbg.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            filter: blur(5px);
+            width: 100%;
+            height: 100vh;
+            z-index: -3;
+        }
+        
+        .newContent {
+            position: relative;
+            /* border: 1px solid #fff; */
+            /* margin-top: ; */
+            width: 80%;
+            margin: 8%;
+            height: 70vh;
+            /* z-index: -2; */
+            overflow: hidden;
+        }
+        
+        .newContent::before {
+            content: "";
+            position: absolute;
+            opacity: 1;
+            background: url('/static/img/bg/newbg.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 80vh;
+            z-index: -3;
+        }
+        
+        .fourSet {
+            position: relative;
+            /* border: 1px solid rgb(0, 0, 0); */
+            height: 180px;
+            /*display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            margin-left: 60px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px 10px black;*/
+            /* overflow: hidden; */
+        }
+        
+        .fourSet a {
+            position: relative;
+            text-decoration: none;
+            color: yellow;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid rgb(255, 255, 255);
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            margin-left: 60px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px 10px black;*/
+            /* overflow: hidden; */
+        }
+        
+        .fourSet .gallary {
+            position: relative;
+            display: inline-block;
+            border: 2px solid rgba(255, 255, 255, 0.575);
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            margin-top: 5px;
+            margin-left: 70px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px 10px black;
+            overflow: hidden;
+        }
+        
+        .fourSet .gallary:hover {
+            cursor: pointer;
+            border: 1px solid #777;
+        }
+        
+        .fourSet .gallary img {
+            position: absolute;
+            z-index: -2;
+        }
+        
+        .fourSet .gallary .nameData {
+            position: absolute;
+            bottom: 0px;
+            /* border: 1px solid rgb(255, 255, 255); */
+            display: inline-block;
+            width: 150px;
+            height: 55px;
+            /* margin: 20px; */
+            /* margin-left: 60px; */
+            border-radius: 0% 0% 50% 50%;
+            /* box-shadow: 10px 10px 10px 10px black; */
+            /* overflow: hidden; */
+            text-align: center;
+        }
+        
+        .fourSet .gallary .nameData::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0.8;
+            background: rgba(20, 20, 20, 0.788);
+            background-attachment: fixed;
+            filter: blur(5px);
+            width: 150px;
+            height: 55px;
+            z-index: -1;
+        }
