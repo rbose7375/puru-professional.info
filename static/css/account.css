@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    position: relative;
+    height: 130vh;
+    width: 99.8%;
+    border: 1px solid black;
+}
+
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    height: 30vh;
+    /* padding: 20px; */
+}
+
+
+/* The navbar container */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: inline-flex;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+
+/* Navbar links */
+
+.topnav a {
+    /* float: left; */
+    /* display: block; */
+    color: #f2f2f2;
+    /* text-align: center; */
+    padding: 14px 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+
+/* Links - change color on hover */
+
+.topnav a:hover {
+    background-color: rgba(221, 221, 221, 0.637);
+    color: black;
+}
+
+.topnav a:active {
+    background-color: rgba(187, 0, 0, 0.986);
+    color: black;
+}
+
+.topnav a:visited {
+    background-color: rgba(29, 184, 81, 0.986);
+    color: black;
+}
+
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+section#about {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-size: 50% 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+section#about::before {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    background: url('/./img/bg/about2.jpg');
+    background-attachment: fixed;
+    filter: blur(2px);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.collect {
+    position: relative;
+    display: inline-flex;
+    border: 1px solid white;
+    box-shadow: 10px 10px 30px 10px rgb(0, 0, 0);
+}
+
+.collect::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline-flex;
+    background: #838083;
+    opacity: 1;
+    z-index: -1;
+}
+
+.collect .holdText {
+    font-size: 40px;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.collect .movingText {
+    margin-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.movingText li {
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 5px;
+    color: green;
+    position: relative;
+    top: 0;
+    animation: slide 8s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -180px;
+    }
+}
+
+.movingText li span {
+    position: relative;
+    z-index: -1;
+}
+
+.movingText li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #858283;
+    z-index: 1;
+    border: none;
+    border-left: 2px solid green;
+    animation: typing 2s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -30px 0 30px;
+    }
+}
+
+.about {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    color: white;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    filter: blur(5px);
+    /* background-size: 5; */
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+hr {
+    border-width: 0.5px;
+    border-color: rgb(255, 255, 255);
+}
+
+.frame {
+    position: relative;
+    left: 10%;
+    top: 9%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 0.2px solid white; */
+    border-radius: 10px;
+    /* background-color: rgb(0, 0, 0); */
+    padding: 10px;
+    width: 500px;
+    max-height: 85.5vh;
+    color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 30px rgb(11, 100, 3); */
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+
+.frame::before {
+    content: "";
+    position: absolute;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    /* padding: 10px; */
+    height: 85.5vh;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.frame:hover {
+    color: green;
+    /* -webkit-box-reflect: left 1px linear-gradient(transparent, #b3b3b3); */
+}
+
+.frame .resume {
+    text-align: center;
+    font-weight: bold;
+}
+
+.frame .headResume .headResume {
+    line-height: 0;
+}
+
+.frame .headResume .fname {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.frame .headResume .email {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.frame .headResume .phoneNumber {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.frame .headResume .address {
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .summary {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.frame .summaryBody {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .education {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.frame .btech {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .btech span {
+    font-size: 14px;
+    margin-left: 160px;
+}
+
+.frame .btech p {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.frame .btech p span {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .t12th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .t12th span {
+    font-size: 14px;
+    margin-left: 340px;
+}
+
+.frame .t12th p {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.frame .t12th p span {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    margin-left: 285px;
+}
+
+.frame .t10th {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .t10th span {
+    font-size: 14px;
+    margin-left: 350px;
+}
+
+.frame .t10th p {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .t10th p span {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 285px;
+}
+
+.frame .project {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.frame .projectspan {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 240px;
+}
+
+.frame .project p {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .project .gbm {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .skills {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.frame .skills .skill {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.frame .skills .skill .value {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+
+/* .about a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    height: 70px;
+    width: 200px;
+    padding: 20px;
+    font-size: 2rem;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-box-reflect: below -1px linear-gradient(transparent, rgba(40, 43, 46, 1));
+    top: 40%;
+    left: 20%;
+} */
+
+
+/* .about a::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 30px;
+        height: 30px;
+        /* background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+        background-size: 400%; 
+        border-top: 2px solid linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+        border-left: 2px solid linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+        /* background-size: 400%; */
+
+
+/* opacity: 0; 
+        transition: 0.5s;
+        z-index: -1;
+        /* animation: animate 20s linear infinite; 
+}
+*/
+
+
+/*     
+    .about a::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+        border-bottom: 2px solid linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00); 
+        /* background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+        background-size: 400%; */
+
+
+/* opacity: 0; */
+
+
+/* filter: blur(20px); */
+
+
+/* transition: 0.5s;
+        z-index: -1; */
+
+
+/* animation: animate 20s linear infinite; */
+
+
+/* } */
+
+
+/*     
+    .about a:hover::before,
+    .about a:hover::after {
+        opacity: 1;
+    } */
+
+
+/* .about a spa {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* line-height: 20px; 
+
+transition: 0.4s;
+color: rgba(255,
+255,
+255,
+0.2);
+background: #000;
+box-shadow: 0 0 20px rgb(6,
+98,
+218);
+
+}
+.about a spa:hover {
+    background: #000;
+    color: rgba(255, 255, 255, 2);
+    box-shadow: 0 0 20px green;
+}
+:root {
+    --grade-border: linear-gradient(120deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    --color: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+}
+.about a::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+    background: var(--grade-border);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+.about a::after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+    background: var(--grade-border);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+.about a:hover::before {
+    width: 102%;
+    height: 102%;
+    transition: 0.8s;
+    animation: animate 20s linear infinite;
+}
+.about a:hover {
+    background: #000;
+}
+.about a:hover::after {
+    width: 102%;
+    height: 102%;
+    transition: 0.8s;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    
+    50% {
+        background-position: 20px 0;
+    }
+    
+    100% {
+        background-position: 0 0;
+    }
+}
+*/
+
+.about .seprate {
+    position: relative;
+    left: 150px;
+    /* border: 2px solid white; */
+    top: 9%;
+    display: flex;
+    border-radius: 10px;
+    /* background-color: rgb(0, 0, 0); */
+    width: 500px;
+    max-height: 85.5vh;
+    /* color: rgb(255, 255, 255); */
+    /* box-shadow: 0 0 30px rgb(11, 100, 3); */
+    /* box-shadow: 0 0 30px rgb(5, 207, 243); */
+}
+
+.about .seprate a bro {
+    /* border: 2px solid white; */
+    position: absolute;
+    display: inline-block;
+    padding: 8px;
+    margin: 40% 28%;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    height: 70px;
+    width: 200px;
+    box-shadow: 0 0 20px rgb(202, 194, 194);
+    transition: 0.8s;
+    overflow: hidden;
+}
+
+.about .seprate a bro:hover {
+    color: green;
+    overflow: hidden;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 0 20px green;
+}
+
+bros {
+    position: absolute;
+    background: linear-gradient(90deg, green, rgb(0, 0, 0));
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: anime 1s linear infinite;
+}
+
+@keyframes anime {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.9;
+    }
+    100% {
+        width: 500px;
+        height: 420px;
+        opacity: 0;
+    }
+}
