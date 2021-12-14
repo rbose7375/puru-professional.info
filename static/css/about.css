@@ -13,7 +13,7 @@ section#about::before {
     content: "";
     position: absolute;
     opacity: 1;
-    background: url('/static/img/bg/about2.jpg');
+    background: url('/./img/bg/about2.jpg');
     background-attachment: fixed;
     filter: blur(2px);
     width: 100%;
@@ -106,7 +106,7 @@ section#about::before {
 .about::before {
     content: "";
     position: absolute;
-    background: url('/static/img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
     background-attachment: fixed;
     filter: blur(5px);
     /* background-size: 5; */
@@ -141,7 +141,7 @@ hr {
 .frame::before {
     content: "";
     position: absolute;
-    background: url('/static/img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
     background-attachment: fixed;
     width: 100%;
     /* padding: 10px; */
@@ -504,7 +504,7 @@ box-shadow: 0 0 20px rgb(6,
     font-size: 1.5rem;
     letter-spacing: 2px;
     border-radius: 50px;
-    background: url('/static/img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
     background-attachment: fixed;
     text-align: center;
     height: 70px;
@@ -517,7 +517,7 @@ box-shadow: 0 0 20px rgb(6,
 .about .seprate a bro:hover {
     color: green;
     overflow: hidden;
-    background: url('/static/img/bg/bgabout2.jpg') center center/cover no-repeat;
+    background: url('/./img/bg/bgabout2.jpg') center center/cover no-repeat;
     background-attachment: fixed;
     box-shadow: 0 0 20px green;
 }
