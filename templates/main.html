@@ -54,50 +54,59 @@
 
         </section>
         <section class="contact" id="contact">
-            <div class="headingContact">
-                <h3 style="font-family: 'Fuzzy Bubbles', cursive;">Hey! Dude Wanna Join Me Before We Go-(Let's Go)</h3>
-                <div class="conts">
-                    <form action="\" method="post">
-                        <table>
-                            <tr>
-                                <td><input type="text" style="border-radius:8px 8px 0px 0px;" name="fName" id="fName" placeholder="ENTER YOUR NAME"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="number" name="fName" id="fName" placeholder="ENTER YOUR PHONE NUMBER"></td>
-                            </tr>
-                            <tr>
+            <div class="warn" id="msg">
+                <p>
+                    {{data}}
+                </p>
+                <button onclick="myFunction()">X</button>
+            </div>
 
-                                <td><input type="email" name="fName" id="fName" placeholder="ENTER YOUR @ EMAIL"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="fName" id="fName" placeholder="RELATIVE / REASON FOR JONING ME"></td>
-                            </tr>
+            <div class="row">
+                <div class="headingContact">
+                    <h3 style="font-family: 'Fuzzy Bubbles', cursive;">Hey! Dude Wanna Join Me Before We Go-(Let's Go)</h3>
+                    <div class="conts">
+                        <form action="\" method="post">
+                            <table>
+                                <tr>
+                                    <td><input type="text" style="border-radius:8px 8px 0px 0px;" name="fName" id="fName" placeholder="ENTER YOUR NAME"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="fName" id="fName" placeholder="ENTER YOUR PHONE NUMBER"></td>
+                                </tr>
+                                <tr>
 
-                            <tr>
-                                <td><textarea id="subject" name="subject" class="special">Erase Me first and Explain Your Reason Here-(Not Compulsory
+                                    <td><input type="email" name="fName" id="fName" placeholder="ENTER YOUR @ EMAIL"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="fName" id="fName" placeholder="RELATIVE / REASON FOR JONING ME"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><textarea id="subject" name="subject" class="special">Erase Me first and Explain Your Reason Here-(Not Compulsory
                                                             To Write Here)</textarea>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
 
-                        </table>
-                        <button type="button" class="bottn">submit</button>
-                    </form>
+                            </table>
+                            <button type="button" class="bottn">submit</button>
+                        </form>
+                        <div class="socialArea">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="socialArea">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-
+                <div class="img">
                 </div>
-
-            </div>
-            <div class="img">
-            </div>
-            <div class="refrence">
-                <p>Icon From Handshake Clipart PNG Designed By 红尘紫衣 from
-                    <a target="__blank" href="https://pngtree.com/freepng/handshake-gesture_952129.html?sol=downref&id=bef">https://pngtree.com/freepng/handshake-gesture_952129.html?sol=downref&id=bef</a> </p>
+                <div class="refrence">
+                    <p>Icon From Handshake Clipart PNG Designed By 红尘紫衣 from
+                        <a target="__blank" href="https://pngtree.com/freepng/handshake-gesture_952129.html?sol=downref&id=bef">https://pngtree.com/freepng/handshake-gesture_952129.html?sol=downref&id=bef</a> </p>
+                </div>
             </div>
         </section>
         <section id="about">
@@ -268,6 +277,7 @@
             duration: 1000,
         });
     </script> -->
+    <script src="/static/js/contact.js"></script>
 </body>
 
 </html>

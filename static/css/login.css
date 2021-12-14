@@ -31,6 +31,7 @@ body::before {
     /* border: 2px solid black; */
     position: absolute;
     top: 0;
+    height: 6vh;
     /* display: flex; */
     /* position: fixed; */
     width: 100%;
@@ -50,14 +51,14 @@ body::before {
 #navbar #logo img {
     width: 250px;
     margin: 3.5px;
-    padding: 5px;
+    padding: 4.5px;
 }
 
 #navbar ul {
     display: flex;
     position: absolute;
     right: 10px;
-    top: 0px;
+    top: -5px;
 }
 
 #navbar ul li {
@@ -165,9 +166,9 @@ input {
     margin-top: -8%;
     /* top: 30px; */
     overflow: hidden;
-    width: 768px;
+    width: 60%;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 60%;
 }
 
 .form-container {
@@ -371,4 +372,54 @@ footer li a {
 
 .fabs a {
     text-decoration: none;
+}
+
+.warn {
+    display: flex;
+    position: relative;
+    top: 6vh;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    vertical-align: text-top;
+    height: 5vh;
+    background: #06ff1b41;
+    border-top: 1px solid #06ff1b41;
+    border-bottom: 1px solid #06ff1b41;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.warn p {
+    position: relative;
+    top: -3.2vh;
+    color: blue;
+    font-size: 0.8em;
+}
+
+.warn button {
+    /* border: 1px solid rgb(255, 5, 5); */
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 10px 0px red; */
+    position: absolute;
+    font-weight: 400;
+    font-size: 15px;
+    right: 20px;
+    /* top: 1px; */
+    /* height: 3vh; */
+    padding: 5px;
+    cursor: pointer;
+    /* width: 0.2em; */
+    /* background: red; */
+    color: white;
+}
+
+.warn button:hover {
+    background: transparent;
+    border: none;
+    /* color: red; */
+    cursor: pointer;
+    /* box-shadow: 0px 0px 10px 0px red; */
+    /* border: 1px solid rgb(255, 5, 5); */
 }

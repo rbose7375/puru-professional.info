@@ -52,7 +52,12 @@
 }
 
 .topnav a:active {
-    background-color: rgba(165, 160, 160, 0.986);
+    background-color: rgba(187, 0, 0, 0.986);
+    color: black;
+}
+
+.topnav a:visited {
+    background-color: rgba(29, 184, 81, 0.986);
     color: black;
 }
 
