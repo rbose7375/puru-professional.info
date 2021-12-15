@@ -16,10 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from puruweb import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('main.html', views.index),
-    path('login.html',views.login , name="login.html")
-]
+    path('', views.main,name="main"),
+    path('main.html',views.contact,name='main.html'),
+    path('main', views.main,name="main"),
+    path('login.html',views.login , name="login.html"),
+    path('log',views.log , name="log"),
+    # path('',views.contact , name="main.html#contact")
+]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

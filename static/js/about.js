@@ -1,5 +1,3 @@
-console.log("this js is working");
-
 // const button = document.getElementById('personalButton');
 // button.innerHTML = "Hover Me";
 // button.addEventListener('mouseenter', func1);
@@ -33,18 +31,15 @@ console.log("this js is working");
 
 // const buttons = document.getElementsByClassName('presonalButton');
 const buttons = document.querySelectorAll('bro');
-
-
-
 buttons.forEach(btn => {
     btn.addEventListener('click', function(e) {
         let x = e.clientX - e.target.offsetLeft;
         let y = e.clientY - e.target.offsetTop;
-        console.log(x, y)
+        // console.log(x, y)
         let ripples = document.createElement('bros');
         ripples.style.left = x - (690) + 'px';
         ripples.style.top = y - 35 + 'px';
-        console.log(ripples)
+        // console.log(ripples)
         this.appendChild(ripples);
 
         setTimeout(() => {

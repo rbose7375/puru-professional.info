@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link rel="shortcut icon" class="login" href="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-login-web-security-flatart-icons-lineal-color-flatarticons.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-login-web-security-flatart-icons-lineal-color-flatarticons.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href='{% static "css/login.css" %}'>
     <!-- <link rel="stylesheet" href="/static/css/main.css"> -->
     <title>Login</title>
     <style>
@@ -22,30 +23,36 @@
 <body>
     <nav class="navbar" id="navbar">
         <div id="logo">
-            <a href="main.html#home">
-                <img src="/static/img/logo/logo2.png" alt="no img" srcset="">
+            <a href="main#home">
+                <img src="{% static '/img/logo/logo2.png' %}" alt="no img" srcset="">
             </a>
         </div>
         <ul>
-            <li><a href="main.html">Home</a></li>
+            <li><a href="main">Home</a></li>
 
             <li>
-                <a href="login.html">
+                <a href="log">
                     <span class="login"></span> Login / Singup
                 </a>
             </li>
         </ul>
     </nav>
+    {% if messages %}
     <div class="warn" id="msg">
+        {% for message in messages %}
         <p>
-            data
+            {{ message }} - {{name}}
         </p>
+        {% endfor %}
+
         <button onclick="myFunction()">X</button>
     </div>
+    {% endif %}
     <!-- <h2>Welcome To Puru-Professional.info Login Section</h2> -->
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="login.html" method="post">
+                {% csrf_token %}
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -53,14 +60,16 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <input type="text" name="name" placeholder="Your Name" required/>
+                <input type="text" name="Uname" placeholder="Create User Name" required/>
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <button type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="login.html" method="post">
+                {% csrf_token %}
                 <h1>Log in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -68,10 +77,10 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="text" name="user_name" placeholder="Enter your User name / email" required />
+                <input type="password" name="pass" placeholder="Password" required />
                 <a href="#">Forgot your password?</a>
-                <button>log In</button>
+                <button type="submit">log In</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -95,18 +104,18 @@
                 <ul>
                     <td>
                         <li>
-                            <a href="main.html"> Home </a>
+                            <a href="main"> Home </a>
                         </li>
                     </td>
                     <td>
                         <li>
-                            <a href="main.html#newworld"> New-World </a>
+                            <a href="main#newworld"> New-World </a>
                         </li>
 
                     </td>
                     <td>
                         <li>
-                            <a href="main.html#contact"> Contact </a>
+                            <a href="main#contact"> Contact </a>
                         </li>
                     </td>
 
@@ -129,7 +138,7 @@
             </ul>
         </table>
     </footer>
-    <script src="/static/js/login.js"></script>
+    <script src="{% static '/js/login.js' %}"></script>
 
 </body>
 

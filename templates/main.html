@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,29 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
-    <link rel="stylesheet" href="/static/css/main.css">
-    <link rel="stylesheet" href="/static/css/home.css">
-    <link rel="stylesheet" href="/static/css/about.css">
-    <link rel="stylesheet" href="/static/css/newworld.css">
-    <link rel="stylesheet" href="/static/css/contact.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/newworld.css' %}">
     <title>Puru-Professional</title>
 </head>
 
 <body>
     <div class="contens">
         <div class="open">
+            {% comment %}
             <div class="layer">
                 Puru
             </div>
             <div class="layer">
                 Professional
-            </div>
+            </div> {% endcomment %}
         </div>
         <nav class="navbar" id="navbar">
             <div id="logo">
                 <a href="#home">
-                    <img src="/static/img/logo/logo2.png" alt="no img" srcset="">
+                    <img src="{% static 'img/logo/logo2.png' %}" alt="no img" srcset="">
                 </a>
             </div>
             <ul>
@@ -37,13 +38,24 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#newWorld">New World</a></li>
                 <li>
-                    <a href="login.html">
+                    <a href="log">
                         <span class="login"></span> Login / Singup
                     </a>
                 </li>
             </ul>
         </nav>
         <section class="home" id="home">
+            {% if messages %}
+            <div class="warn" id="msg">
+                {% for message in messages %}
+                <p>
+                    {{ message }}
+                </p>
+                {% endfor %}
+
+                <button onclick="myFunction()">X</button>
+            </div>
+            {% endif %}
 
             <div class="homes">
                 <p class="p">"I Believe In Support,</p>
@@ -54,42 +66,37 @@
 
         </section>
         <section class="contact" id="contact">
-            <div class="warn" id="msg">
-                <p>
-                    {{data}}
-                </p>
-                <button onclick="myFunction()">X</button>
-            </div>
+
 
             <div class="row">
                 <div class="headingContact">
                     <h3 style="font-family: 'Fuzzy Bubbles', cursive;">Hey! Dude Wanna Join Me Before We Go-(Let's Go)</h3>
                     <div class="conts">
-                        <form action="\" method="post">
+                        <form action="main.html" method="post">
+                            {% csrf_token %}
                             <table>
                                 <tr>
-                                    <td><input type="text" style="border-radius:8px 8px 0px 0px;" name="fName" id="fName" placeholder="ENTER YOUR NAME"></td>
+                                    <td><input type="text" style="border-radius:8px 8px 0px 0px;" name="name" id="name" placeholder="ENTER YOUR NAME" required></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="number" name="fName" id="fName" placeholder="ENTER YOUR PHONE NUMBER"></td>
+                                    <td><input type="number" name="phone" id="phone" placeholder="ENTER YOUR PHONE NUMBER" required></td>
                                 </tr>
                                 <tr>
 
-                                    <td><input type="email" name="fName" id="fName" placeholder="ENTER YOUR @ EMAIL"></td>
+                                    <td><input type="email" name="email" id="email" placeholder="ENTER YOUR @ EMAIL"></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="fName" id="fName" placeholder="RELATIVE / REASON FOR JONING ME"></td>
+                                    <td><input type="text" name="reason" id="reason" placeholder="RELATIVE / REASON FOR JONING ME"></td>
                                 </tr>
 
                                 <tr>
-                                    <td><textarea id="subject" name="subject" class="special">Erase Me first and Explain Your Reason Here-(Not Compulsory
-                                                            To Write Here)</textarea>
+                                    <td><textarea id="subject" name="subject" class="special" placeholder="Explain Your Matter Dude"></textarea>
                                     </td>
                                 </tr>
 
 
                             </table>
-                            <button type="button" class="bottn">submit</button>
+                            <button type="submit" class="bottn" onclick="myFunctions()">submit</button>
                         </form>
                         <div class="socialArea">
                             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -186,25 +193,25 @@
                 <div class="fourSet">
                     <a href="#">
                         <div class="gallary">
-                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
                             <div class="nameData">Gallary</div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="gallary">
-                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
                             <div class="nameData">Gallary</div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="gallary">
-                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
                             <div class="nameData">Gallary</div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="gallary">
-                            <img src="/static/img/bg/contact2.png" height="150" alt="gallary img">
+                            <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
                             <div class="nameData">Gallary</div>
                         </div>
                     </a>
@@ -267,17 +274,9 @@
             </footer>
         </section>
     </div>
-    <script src="/static/js/about.js"></script>
+    <script src="{% static 'js/about.js' %}"></script>
 
-    <!-- our aos data -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 200,
-            duration: 1000,
-        });
-    </script> -->
-    <script src="/static/js/contact.js"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
 </body>
 
 </html>

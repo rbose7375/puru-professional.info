@@ -11,3 +11,11 @@ function myFunction() {
     var myobj = document.getElementById("msg");
     myobj.remove();
 }
+
+
+function myFunctions() {
+    setTimeout(function() {
+        var myobj = document.getElementById("msg");
+        myobj.remove();
+    }, 500);
+}
