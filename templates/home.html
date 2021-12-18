@@ -5,11 +5,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Show Data</title>
 </head>
+<style>
+    table button {
+        background-color: aqua;
+        border: 1px solid rgb(255, 1, 1);
+        border-radius: 5px;
+    }
+    
+    table button:hover {
+        background-color: rgb(238, 245, 245);
+        border: 1px solid rgb(252, 0, 0);
+    }
+    
+    button {
+        background-color: aqua;
+        border: 1px solid rgb(255, 1, 1);
+        border-radius: 5px;
+    }
+    
+    button:hover {
+        background-color: rgb(238, 245, 245);
+        border: 1px solid rgb(252, 0, 0);
+    }
+    
+    .warn {
+        display: flex;
+        position: absolute;
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: left;
+        justify-content: center;
+        vertical-align: text-top;
+        height: 5vh;
+        background: #06ff1b41;
+        border-top: 1px solid #06ff1b41;
+        border-bottom: 1px solid #06ff1b41;
+        overflow: hidden;
+        z-index: 0;
+    }
+    
+    .warn p {
+        position: relative;
+        top: -3.2vh;
+        color: blue;
+        font-size: 0.8em;
+    }
+    
+    .warn button {
+        /* border: 1px solid rgb(255, 5, 5); */
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px red;
+        position: absolute;
+        font-weight: 400;
+        font-size: 15px;
+        right: 20px;
+        top: -1px;
+        /* height: 3vh; */
+        padding: 5px;
+        cursor: pointer;
+        /* width: 0.2em; */
+        background: red;
+        color: white;
+    }
+    
+    .warn button:hover {
+        background: transparent;
+        border: none;
+        /* color: red; */
+        cursor: pointer;
+        box-shadow: none;
+        /* border: 1px solid rgb(255, 5, 5); */
+    }
+</style>
 
 <body>
+    {% if messages %}
+    <div class="warn" id="msg">
+        {% for message in messages %}
+        <p>
+            {{ message }} - {{name}}
+        </p>
+        {% endfor %}
 
+        <button onclick="myFunction()">X</button>
+    </div>
+    <div style="padding: 10%;">
+        {% endif %} {% if info %} {% for i in info %}
+        <table style="border: 1px solid black;padding: 0.5%; ">
+            <thead>
+                <tr>
+                    <td style="border: 1px solid black; width: 5em;">
+                        {{i.id}}
+                    </td>
+                    <td style="border: 1px solid black;width: 5em;">
+                        {{i.name}}
+                    </td>
+                    <td style="border: 1px solid black;width: 5em;">
+                        {{i.userName}}
+
+                    </td>
+                    <td style="border: 1px solid black;width: 8em;">
+                        {{i.email}}
+
+                    </td>
+                    <td style="border: 1px solid black;width: 5em;">
+                        {{i.passwd}}
+
+                    </td>
+                    <td>
+                        <form action="{% url 'update' i.id %}" method="post">
+                            {% csrf_token %}
+
+                            <button type="submit" value="update">edit </button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="{% url 'deleteData' i.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" value="delete">delete</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="entrance" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" value="delete">go back</button>
+                        </form>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        {% endfor %} {% else %}
+        <div style="padding: 10%;">
+            there is no data
+            <form action="entrance" method="GET">
+                {% csrf_token %}
+                <button type="submit" value="delete">go back</button>
+            </form> {% endif %}
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var myobj = document.getElementById("msg");
+            myobj.remove();
+        }
+    </script>
 </body>
 
 </html>

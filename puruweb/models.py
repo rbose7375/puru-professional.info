@@ -25,3 +25,18 @@ class signp(models.Model):
         return self.userName
 
   
+class personal(models.Model):
+    name=models.CharField(max_length=500)
+    age=models.DateTimeField(auto_now=False, auto_now_add=False)
+    relation=models.CharField( max_length=500)
+    phone=models.IntegerField()
+    email=models.EmailField(max_length=254)
+    occupation=models.CharField(max_length=500)
+    mothertounge=models.CharField(max_length=500)
+    img=models.ImageField(upload_to='image/personal')
+
+
+    def __str__(self):
+        return self.name
+
+

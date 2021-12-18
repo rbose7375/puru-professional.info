@@ -28,6 +28,12 @@
             </a>
         </div>
         <ul>
+            <li>
+                <a href="home">
+                    <span class="fa-home"></span> Show data
+                </a>
+
+            </li>
             <li><a href="main">Home</a></li>
 
             <li>
@@ -51,7 +57,7 @@
     <!-- <h2>Welcome To Puru-Professional.info Login Section</h2> -->
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="login" method="post">
+            <form action="{% url 'singUpData' %}" method="post">
                 {% csrf_token %}
                 <h1>Create Account</h1>
                 <div class="social-container">

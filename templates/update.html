@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE</title>
+</head>
+<style>
+    table button {
+        background-color: aqua;
+        border: 1px solid rgb(255, 1, 1);
+        border-radius: 5px;
+    }
+    
+    table button:hover {
+        background-color: rgb(238, 245, 245);
+        border: 1px solid rgb(252, 0, 0);
+    }
+    
+    button {
+        background-color: aqua;
+        border: 1px solid rgb(255, 1, 1);
+        border-radius: 5px;
+    }
+    
+    button:hover {
+        background-color: rgb(238, 245, 245);
+        border: 1px solid rgb(252, 0, 0);
+    }
+</style>
+
+<body>
+    {% if info %}
+    <table style="border: 1px solid black;padding: 0.5%; ">
+        <thead>
+            <tr>
+                <td style="border: 1px solid black; width: 5em;">ID</td>
+                <td style="border: 1px solid black; width: 5em;">Name</td>
+                <td style="border: 1px solid black; width: 5em;">User Name</td>
+                <td style="border: 1px solid black; width: 5em;">Email</td>
+                <td style="border: 1px solid black; width: 5em;">Password</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <form action="{% url 'updat' info.id %}" method="post">
+                    {% csrf_token %}
+                    <td style="border: 1px solid black; width: 5em;">
+                        {{info.id}}
+                    </td>
+                    <td style="border-bottom: 1px solid black;width: 5em;">
+                        <input style="border: none; outline:none ;" type="text" name="name" value="{{info.name}}">
+                    </td>
+                    <td style=" border-bottom: 1px solid black;width: 5em;">
+                        <input style="border: none; outline:none ;" type="text" name="Uname" value="{{info.userName}}">
+
+                    </td>
+                    <td style=" border-bottom: 1px solid black;width: 8em;">
+                        <input style="border: none; outline:none ;" type="email" name="email" value="{{info.email}}">
+
+                    </td>
+                    <td style=" border-bottom: 1px solid black;width: 5em;">
+                        <input style="border: none; outline:none ;" type="text" name="password" value="{{info.passwd}}">
+
+                    </td>
+                    <td>
+                        <button type="submit">Update</button>
+                    </td>
+                </form>
+
+                <td style=" border-bottom: 1px solid black;width: 5em;">
+                    <form action="{% url 'show' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit" value="delete">go back</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+        {% else %} there is no data
+        <td style=" border-bottom: 1px solid black;width: 5em;">
+
+            <form action="entrance" method="post">
+                {% csrf_token %}
+                <button type="submit" value="delete">go back</button>
+            </form> {% endif %}
+        </td>
+    </table>
+
+</body>
+<script>
+    function myFunction() {
+        var myobj = document.getElementById("msg");
+        myobj.remove();
+    }
+</script>
+
+</html>
