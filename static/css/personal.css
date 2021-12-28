@@ -103,7 +103,7 @@ body {
 .caption-container {
     position: relative;
     bottom: 9vh;
-    left: 45%;
+    text-align: center;
     height: auto;
     width: max-content;
     text-align: center;
@@ -115,20 +115,6 @@ body {
     box-shadow: 2px 2px 2px 2px rgb(41, 41, 43);
     z-index: 1;
 }
-
-
-/* 
-.caption-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgb(0, 0, 0);
-    opacity: 0.8;
-    z-index: -1;
-    filter: blur(8px);
-} */
 
 a {
     text-decoration: none;
@@ -145,7 +131,7 @@ a {
 
 .column {
     float: left;
-    width: 16.66%;
+    width: 14%;
 }
 
 
@@ -175,14 +161,14 @@ section {
 .card {
     /* Add shadows to create the "card" effect */
     width: 23%;
-    height: 45vh;
+    height: 40vh;
     margin: 0.5rem;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     /* border: 1px solid black; */
     transition: 0.3s;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 
@@ -210,7 +196,7 @@ section {
     justify-content: center;
     margin: 5%;
     width: 90%;
-    height: 90vh;
+    height: 45vh;
     background-color: rgb(202, 188, 188);
     border: 1px solid rgb(255, 253, 253);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
