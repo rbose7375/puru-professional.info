@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a8b5e52 (almost done)
 * {
     padding: 0px 0px;
     margin: 0px 0px;
@@ -11,6 +14,10 @@ body {
     line-height: 1.6;
     height: 100vh;
     overflow: hidden;
+<<<<<<< HEAD
+=======
+    overflow-x: hidden;
+>>>>>>> a8b5e52 (almost done)
 }
 
 .open {
@@ -63,12 +70,17 @@ body {
     position: relative;
     top: 0;
     display: flex;
+<<<<<<< HEAD
     position: fixed;
+=======
+    /* position: fixed; */
+>>>>>>> a8b5e52 (almost done)
     width: 100%;
     z-index: 1;
     height: 7vh;
 }
 
+<<<<<<< HEAD
 #navbar::before {
     content: "";
     position: absolute;
@@ -83,12 +95,22 @@ body {
     width: 250px;
     margin: 3.5px;
     padding: 5px;
+=======
+#navbar #logo img {
+    width: 50%;
+    margin: 1%;
+    padding: 1%;
+>>>>>>> a8b5e52 (almost done)
 }
 
 #navbar ul {
     display: flex;
     position: absolute;
+<<<<<<< HEAD
     right: 10px;
+=======
+    right: 2%;
+>>>>>>> a8b5e52 (almost done)
     top: 20%;
 }
 
@@ -118,12 +140,20 @@ body {
     width: 100%;
     height: 100vh;
     /* scroll properperties lies here */
+<<<<<<< HEAD
+=======
+    /* overflow-x: hidden; */
+>>>>>>> a8b5e52 (almost done)
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
 
+<<<<<<< HEAD
 section {
+=======
+.contens section {
+>>>>>>> a8b5e52 (almost done)
     width: 100%;
     height: 100vh;
     scroll-snap-align: center;
@@ -131,8 +161,13 @@ section {
 
 .back {
     position: absolute;
+<<<<<<< HEAD
     background-color: black;
     border: 1px solid purple;
+=======
+    background-color: rgba(124, 124, 124, 0.726);
+    border: 1px solid rgb(87, 82, 87);
+>>>>>>> a8b5e52 (almost done)
     border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem;
@@ -143,6 +178,10 @@ section {
     color: white;
     font-size: 2rem;
     z-index: 10;
+<<<<<<< HEAD
+=======
+    transition: 0.5s;
+>>>>>>> a8b5e52 (almost done)
 }
 
 .back:hover {
@@ -156,6 +195,7 @@ section#footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+<<<<<<< HEAD
     height: 30vh;
     color: skyblue;
 <<<<<<< HEAD
@@ -168,6 +208,12 @@ section#footer {
     /* background: url('./../img/bg/home.jpg') no-repeat center center/cover; */
     background: black;
 >>>>>>> 2155350 (working now long signup contact)
+=======
+    height: 25vh;
+    color: skyblue;
+    /* background: url('./../img/bg/home.jpg') no-repeat center center/cover; */
+    background: linear-gradient(45deg, rgb(39, 39, 39), rgb(20, 20, 20), black, rgb(20, 20, 20), rgb(31, 31, 31), rgb(39, 39, 39));
+>>>>>>> a8b5e52 (almost done)
     background-attachment: fixed;
 }
 
@@ -194,6 +240,10 @@ footer li a {
 
 footer li a:hover {
     color: rgb(114, 236, 43);
+<<<<<<< HEAD
 }
 =======
 >>>>>>> 5ab05b1 (almost done)
+=======
+}
+>>>>>>> a8b5e52 (almost done)

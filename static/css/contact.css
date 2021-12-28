@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a8b5e52 (almost done)
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fuzzy+Bubbles&display=swap');
 section#contact {
     position: relative;
@@ -14,6 +17,7 @@ section#contact::before {
     content: "";
     width: 100%;
     height: 100vh;
+<<<<<<< HEAD
 <<<<<<< HEAD
     background: url("/./img/bg/bg1.jpg") center center/cover no-repeat;
 =======
@@ -37,10 +41,20 @@ section#contact::before {
     }
 */
 
+=======
+    background: url("/static/img/section/bg1.jpg") center center/cover no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    filter: blur(3px);
+    z-index: -5;
+}
+
+>>>>>>> a8b5e52 (almost done)
 section#contact .img {
     position: relative;
     /* border: 1px solid black; */
     align-items: center;
+<<<<<<< HEAD
     margin-right: 40px;
     width: 40%;
 <<<<<<< HEAD
@@ -48,6 +62,11 @@ section#contact .img {
 =======
     background: url('./../img/bg/handshake2.png') center center/cover no-repeat;
 >>>>>>> 08adad2 (update more)
+=======
+    margin-left: 5%;
+    width: 40%;
+    background: url('static/img/bg/handshake2.png') center center/cover no-repeat;
+>>>>>>> a8b5e52 (almost done)
     background-size: 100% 50%;
     /* filter: blur(5px); */
     height: 95vh;
@@ -60,18 +79,29 @@ section#contact .img {
 
 section#contact .headingContact {
     position: relative;
+<<<<<<< HEAD
     width: 50%;
     margin: 55px;
+=======
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 7%;
+>>>>>>> a8b5e52 (almost done)
     height: 82vh;
     box-shadow: 0px 10px 20px rgb(0, 0, 0);
     /* border: 1px solid black; */
     overflow: hidden;
+<<<<<<< HEAD
     border-radius: 20px;
+=======
+    border-radius: 5%;
+>>>>>>> a8b5e52 (almost done)
 }
 
 section#contact .headingContact::before {
     content: "";
     position: absolute;
+<<<<<<< HEAD
     left: 0px;
     opacity: 1;
 <<<<<<< HEAD
@@ -84,6 +114,12 @@ section#contact .headingContact::before {
     /* background-attachment: fixed; */
     height: 82vh;
     border-radius: 20px;
+=======
+    left: 0%;
+    opacity: 1;
+    width: 100%;
+    border-radius: 5%;
+>>>>>>> a8b5e52 (almost done)
     z-index: -4;
 }
 
@@ -94,6 +130,7 @@ section#contact .headingContact::after {
     left: 0px;
     opacity: 0.5;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: url("/./img/bg/bg1.jpg") center center/cover no-repeat;
 =======
     background: url("./../img/bg/bg1.jpg") center center/cover no-repeat;
@@ -102,25 +139,48 @@ section#contact .headingContact::after {
     width: 100%;
     background-attachment: fixed;
     height: 100vh;
+=======
+    background: url("/static/img/section/bg1.jpg") center center/cover no-repeat;
+    background-size: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    /* height: 100vh; */
+>>>>>>> a8b5e52 (almost done)
     z-index: -3;
 }
 
 section#contact .refrence {
     position: absolute;
+<<<<<<< HEAD
     bottom: -12px;
+=======
+    bottom: 1%;
+>>>>>>> a8b5e52 (almost done)
     height: 5vh;
     /* margin-right: 10px; */
     padding: 2px;
     color: black;
     width: 98%;
+<<<<<<< HEAD
     font-size: 10px;
     /* border: 5px solid black; */
 }
 
+=======
+    font-size: 0.8rem;
+    /* border: 5px solid black; */
+}
+
+section#contact .headingContact table {
+    width: 100%;
+}
+
+>>>>>>> a8b5e52 (almost done)
 section#contact .headingContact table input {
     border: none;
     border-bottom: 1px solid black;
     /* margin: 1%; */
+<<<<<<< HEAD
     padding: 1px;
     margin-left: 5px;
     margin-top: 5px;
@@ -133,6 +193,20 @@ section#contact .headingContact table input {
     transition: 0.8s;
     background: linear-gradient(0deg, rgba(250, 250, 250, 0.192), rgba(62, 111, 170, 0.445), rgba(11, 34, 48, 0.486), rgba(43, 43, 43, 0.918));
     box-shadow: 0px 5px 10px rgba(0, 128, 0, 0.767);
+=======
+    padding: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    color: green;
+    /* font-weight: bold; */
+    width: 96%;
+    height: 3.5vh;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: 0.8s;
+    /* background: linear-gradient(0deg, rgba(250, 250, 250, 0.192), rgba(62, 111, 170, 0.445), rgba(11, 34, 48, 0.486), rgba(43, 43, 43, 0.918)); */
+    box-shadow: 0px 5px 10px rgba(248, 248, 248, 0);
+>>>>>>> a8b5e52 (almost done)
 }
 
 section#contact .headingContact table input:focus {
@@ -141,7 +215,11 @@ section#contact .headingContact table input:focus {
 
 input::-webkit-input-placeholder {
     color: #000000;
+<<<<<<< HEAD
     font-size: 18px;
+=======
+    font-size: 0.7rem;
+>>>>>>> a8b5e52 (almost done)
     font-weight: 500;
     opacity: 1;
     font-family: 'Comfortaa', cursive;
@@ -156,10 +234,17 @@ section#contact .headingContact table .special {
     padding: 1px;
     width: 99%;
     font-family: 'Fuzzy Bubbles', cursive;
+<<<<<<< HEAD
     height: 90px;
     font-size: 18px;
     text-align: left;
     background: linear-gradient(0deg, rgba(250, 250, 250, 0.192), rgba(62, 111, 170, 0.445), rgba(11, 34, 48, 0.486), rgba(43, 43, 43, 0.918));
+=======
+    height: 22vh;
+    font-size: 1.5rem;
+    text-align: left;
+    /* background: linear-gradient(0deg, rgba(250, 250, 250, 0.192), rgba(62, 111, 170, 0.445), rgba(11, 34, 48, 0.486), rgba(43, 43, 43, 0.918)); */
+>>>>>>> a8b5e52 (almost done)
 }
 
 section#contact .headingContact table .special:focus {
@@ -172,7 +257,11 @@ section#contact .headingContact .bottn:hover {
 }
 
 section#contact .headingContact .conts {
+<<<<<<< HEAD
     margin: 10px;
+=======
+    /* margin: 1%; */
+>>>>>>> a8b5e52 (almost done)
     overflow: hidden;
     background: rgba(0, 0, 0, 0.404);
     border-radius: 10px;
@@ -184,6 +273,7 @@ section#contact .headingContact .conts {
 
 section#contact .headingContact .socialArea {
     position: relative;
+<<<<<<< HEAD
     bottom: -20px;
     margin-left: 10px;
     overflow: hidden;
@@ -192,11 +282,23 @@ section#contact .headingContact .socialArea {
     border-radius: 10px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.945);
     /* border: 2px solid blue; */
+=======
+    bottom: -1%;
+    /* margin-left: 10px; */
+    overflow: hidden;
+    width: 96%;
+    background: rgba(0, 0, 0, 0.26);
+    border-radius: 40%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.993);
+    /* border: 2px solid blue; */
+    /* z-index: -3; */
+>>>>>>> a8b5e52 (almost done)
 }
 
 section#contact .headingContact .bottn {
     position: relative;
     display: block;
+<<<<<<< HEAD
     margin-left: 10px;
     width: 150px;
     height: 40px;
@@ -205,6 +307,16 @@ section#contact .headingContact .bottn {
     text-transform: uppercase;
     font-size: 1.5rem;
     background: linear-gradient(0deg, rgb(80, 28, 28), rgb(69, 71, 31), rgb(95, 52, 35));
+=======
+    margin-left: 5%;
+    width: 25%;
+    height: 4.5vh;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    background: linear-gradient(0deg, rgb(71, 70, 70), rgb(75, 70, 70), rgb(82, 72, 68));
+>>>>>>> a8b5e52 (almost done)
     border: none;
     margin-bottom: 5px;
     cursor: pointer;
@@ -274,7 +386,11 @@ section#contact .headingContact .bottn:hover::after {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 2rem;
+<<<<<<< HEAD
     color: black;
+=======
+    color: rgb(255, 255, 255);
+>>>>>>> a8b5e52 (almost done)
 }
 
 .fab a {
@@ -330,6 +446,10 @@ section#contact .headingContact .bottn:hover::after {
     cursor: pointer;
     border: none;
     box-shadow: none;
+<<<<<<< HEAD
 }
 =======
 >>>>>>> 5ab05b1 (almost done)
+=======
+}
+>>>>>>> a8b5e52 (almost done)
