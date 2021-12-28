@@ -12,16 +12,7 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
-class Contact(models.Model):
-    name=models.CharField( max_length=150)
-    email=models.EmailField( max_length=254)
-    phone=models.IntegerField()
-    reason=models.CharField( max_length=150)
-    explain=models.TextField()
-    date=models.DateField()
 
-    def __str__(self):
-        return self.name
 
 class signp(models.Model):
     name=models.CharField(max_length=50)  

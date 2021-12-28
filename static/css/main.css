@@ -138,10 +138,15 @@ section#footer {
     height: 30vh;
     color: skyblue;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: url('/./img/bg/home.jpg') no-repeat center center/cover;
 =======
     background: url('./../img/bg/home.jpg') no-repeat center center/cover;
 >>>>>>> 08adad2 (update more)
+=======
+    /* background: url('./../img/bg/home.jpg') no-repeat center center/cover; */
+    background: black;
+>>>>>>> 2155350 (working now long signup contact)
     background-attachment: fixed;
 }
 

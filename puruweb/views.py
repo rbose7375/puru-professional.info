@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
-from .models import Contact
+from .models import Contact,signp
 from datetime import datetime
 
 
@@ -25,23 +25,48 @@ def contact(request):
 
         return render(request,'main.html')
 
-def login(request):
+def logi(request):
+    filter=signp.objects.all()
+    n=len(filter)
     if request.method=="POST":
         name=request.POST.get('name', '')
         email=request.POST.get('email', '')
         uname=request.POST.get('Uname', '')
         pas=request.POST.get('password', '')
-        print(email,name,pas,uname)
-        userName=request.POST.get('user_name', '')
+        # print(email,name,pas,uname)
+        # print(usrName,passBro)
+        if  email !="" and uname !="":
+            for i in range(n):
+                if email == filter[i].email :
+                    messages.success(request, 'Email already exist!')
+                    return render(request,'login.html')
+                if uname == filter[i].userName :
+                    messages.success(request, 'User Name already exist!')
+                    return render(request,'login.html')
+        else:
+            messages.success(request, 'Your Registration Has Been Completed')
+            sign_ups=signp(name=name,email=email,passwd=pas,userName=uname,date=datetime.today())
+            sign_ups.save()
+            return render(request,'login.html',{'name':name})
+def login(request):
+    filter=signp.objects.all()
+    n=len(filter)
+    if request.method=="POST":
+        usrName=request.POST.get('user_name', '')
         passBro=request.POST.get('pass', '')
-        print(userName,passBro)
-        # sign_ups=signUp(name=name,email=email,password=pas,usname=uname,date=datetime.today())
-        # sign_ups.save()
-        # if name !="" and email !="" and uname !="" and pas !="":
-
-
-        # messages.success(request, 'Your Registration Has Been Done!')
+        email=request.POST.get('user_name', '')
+        # print(usrName,passBro)
+        if (email!="" or usrName !="") and passBro !="":
+                for i in range(n):
+                    if (email==filter[i].email or usrName == filter[i].userName) and passBro == filter[i].passwd:
+                        messages.success(request, 'Welcome back')
+                        return render(request,'login.html',{'name':filter[i].name})
+                for i in range(n):
+                    if (email != filter[i].email or usrName != filter[i].userName) and passBro != filter[i].passwd:
+                        messages.success(request, 'No Data Found Please Sign up')
+                        return render(request,'login.html')
+    else:
         return render(request,'login.html')
-def log(request):
-    return render(request,'login.html')
+
+
 
