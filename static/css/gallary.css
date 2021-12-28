@@ -7,6 +7,7 @@ body {
     font-size: 12px;
     background-color: rgb(83, 221, 221);
     width: 100%;
+<<<<<<< HEAD
     height: 90vh;
     overflow-y: hidden;
 }
@@ -129,4 +130,17 @@ a {
 
 .back:hover {
     background-color: transparent;
+=======
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    background-color: black;
+    border: 2px solid white;
+    margin: 5%;
+    width: 90%;
+    height: 90vh;
+    color: white;
+>>>>>>> 02329d5 (tatti gallary)
 }

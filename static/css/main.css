@@ -122,8 +122,13 @@ body {
 
 .back {
     position: absolute;
+<<<<<<< HEAD
     background-color: rgba(124, 124, 124, 0.726);
     border: 1px solid rgb(87, 82, 87);
+=======
+    background-color: black;
+    border: 1px solid purple;
+>>>>>>> 02329d5 (tatti gallary)
     border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem;
@@ -134,7 +139,10 @@ body {
     color: white;
     font-size: 2rem;
     z-index: 10;
+<<<<<<< HEAD
     transition: 0.5s;
+=======
+>>>>>>> 02329d5 (tatti gallary)
 }
 
 .back:hover {

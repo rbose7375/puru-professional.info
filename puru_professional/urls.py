@@ -26,6 +26,7 @@ urlpatterns = [
     path('main.html',views.contact,name='main.html'),
     path('main', views.main,name="main"),
 <<<<<<< HEAD
+<<<<<<< HEAD
     path('login',views.logi , name="singUpData"),
     path('entrance',views.login , name="entrance"),
     path('entrance/<int:id>/',views.login, name="entrance"),
@@ -43,4 +44,18 @@ urlpatterns = [
     path('entrance',views.login , name="entrance"),
     # path('',views.contact , name="main.html#contact")
 >>>>>>> 2155350 (working now long signup contact)
+=======
+    path('login',views.logi , name="singUpData"),
+    path('entrance',views.login , name="entrance"),
+    path('entrance/<int:id>/',views.login, name="entrance"),
+    path('home',views.home , name="show"),
+    path('homes',views.homes , name="homes"),
+    path('delete/<int:id>/',views.deleteData , name="deleteData"),
+    path('update/<int:id>/',views.update , name="update"),
+    path('update.html/',views.home , name="update"),
+    path('updat/<int:id>/',views.updat , name="updat"),
+    path('personaldetail',views.Personal , name="personaldetail"),
+    path('gallary',views.gallary , name="gallary"),
+    
+>>>>>>> 02329d5 (tatti gallary)
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
