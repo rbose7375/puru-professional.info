@@ -25,6 +25,7 @@ urlpatterns = [
     path('', views.main,name="main"),
     path('main.html',views.contact,name='main.html'),
     path('main', views.main,name="main"),
+<<<<<<< HEAD
     path('login',views.logi , name="singUpData"),
     path('entrance',views.login , name="entrance"),
     path('entrance/<int:id>/',views.login, name="entrance"),
@@ -37,4 +38,9 @@ urlpatterns = [
     path('personaldetail',views.Personal , name="personaldetail"),
     path('gallarys',views.gallarys , name="gallarys"),
     path('img',views.img , name="img"),    
+=======
+    path('login',views.logi , name="login"),
+    path('entrance',views.login , name="entrance"),
+    # path('',views.contact , name="main.html#contact")
+>>>>>>> 2155350 (working now long signup contact)
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
