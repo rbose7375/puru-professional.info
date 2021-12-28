@@ -1,10 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a8b5e52 (almost done)
 =======
 >>>>>>> 54acd30 (done)
+=======
+=======
+>>>>>>> a8b5e52 (almost done)
+>>>>>>> ef49cbe (done)
 * {
     padding: 0px 0px;
     margin: 0px 0px;
@@ -166,6 +171,7 @@ section {
     position: absolute;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: black;
     border: 1px solid purple;
 =======
@@ -173,13 +179,22 @@ section {
     border: 1px solid rgb(87, 82, 87);
 >>>>>>> a8b5e52 (almost done)
 =======
+=======
+>>>>>>> ef49cbe (done)
     background-color: rgba(124, 124, 124, 0.726);
     border: 1px solid rgb(87, 82, 87);
 =======
     background-color: black;
     border: 1px solid purple;
 >>>>>>> 02329d5 (tatti gallary)
+<<<<<<< HEAD
 >>>>>>> 203b2b9 (done)
+=======
+=======
+    background-color: rgba(124, 124, 124, 0.726);
+    border: 1px solid rgb(87, 82, 87);
+>>>>>>> a8b5e52 (almost done)
+>>>>>>> ef49cbe (done)
     border-radius: 50%;
     height: 3.5rem;
     width: 3.5rem;
@@ -192,6 +207,7 @@ section {
     z-index: 10;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     transition: 0.5s;
 >>>>>>> a8b5e52 (almost done)
@@ -200,6 +216,14 @@ section {
 =======
 >>>>>>> 02329d5 (tatti gallary)
 >>>>>>> 203b2b9 (done)
+=======
+    transition: 0.5s;
+=======
+>>>>>>> 02329d5 (tatti gallary)
+=======
+    transition: 0.5s;
+>>>>>>> a8b5e52 (almost done)
+>>>>>>> ef49cbe (done)
 }
 
 .back:hover {
@@ -231,6 +255,7 @@ section#footer {
     color: skyblue;
     /* background: url('./../img/bg/home.jpg') no-repeat center center/cover; */
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: linear-gradient(45deg, rgb(39, 39, 39), rgb(20, 20, 20), black, rgb(20, 20, 20), rgb(31, 31, 31), rgb(39, 39, 39));
 <<<<<<< HEAD
 >>>>>>> a8b5e52 (almost done)
@@ -238,7 +263,13 @@ section#footer {
 =======
     background: black;
 >>>>>>> 2155350 (working now long signup contact)
+<<<<<<< HEAD
 >>>>>>> 959a016 (done)
+=======
+=======
+    background: linear-gradient(45deg, rgb(39, 39, 39), rgb(20, 20, 20), black, rgb(20, 20, 20), rgb(31, 31, 31), rgb(39, 39, 39));
+>>>>>>> a8b5e52 (almost done)
+>>>>>>> ef49cbe (done)
     background-attachment: fixed;
 }
 
@@ -267,6 +298,7 @@ footer li a:hover {
     color: rgb(114, 236, 43);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 >>>>>>> 5ab05b1 (almost done)
@@ -278,3 +310,11 @@ footer li a:hover {
 =======
 >>>>>>> 5ab05b1 (almost done)
 >>>>>>> 54acd30 (done)
+=======
+}
+=======
+>>>>>>> 5ab05b1 (almost done)
+=======
+}
+>>>>>>> a8b5e52 (almost done)
+>>>>>>> ef49cbe (done)
