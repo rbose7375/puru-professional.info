@@ -3,7 +3,7 @@ from django.views.decorators.csrf import csrf_protect
 
 # from django.http import HttpResponse
 from django.contrib import messages
-from .models import Contact, signp, personal
+from .models import Contact, signp, personal,gallary
 from datetime import datetime
 
 
@@ -135,8 +135,16 @@ def Personal(request):
 
     return render(request,'personal.html',params)
 
-def gallary(request):
+def gallarys(request):
+
     return render(request,'gallary.html')
+
+
+def img(request):
+    allimg=gallary.objects.all()
+    print(allimg)
+    params={'data':allimg}
+    return render(request,'common.html',params)
 
 
 

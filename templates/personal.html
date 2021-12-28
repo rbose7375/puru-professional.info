@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <a href="main" class="back">&#10094;</a>
-    <div class="main">
+    <a href="main" class="back">&#8617;</a>
+    <div class="main" style="text-align: center;">
 
         <div class="container">
             {% if detail %} {% for i in detail %}
@@ -20,7 +20,7 @@
             <div class="mySlides">
                 <div class="numbertext">{{i.id}} / {{detail|length}}</div>
                 <a href="#detail" onclick="opensection()">
-                    <img src="/media/{{i.img}}" style="width:100%; height:80vh;">
+                    <img src="/media/{{i.img}}" style="width:auto; height:80vh;">
                     <p class="caption-container">{{i.name}}</p>
                 </a>
 
@@ -34,9 +34,9 @@
 
             <!-- Thumbnail images -->
             {% if detai %} {% for i in detai %}
-            <div class="row">
+            <div class="row" style="text-align: center;">
                 <div class="column">
-                    <img class="demo cursor" src="/media/{{i.img}}" style="width:98%; height:17vh;margin-left: 1rem;" onclick="currentSlide(this.id)" id="{{i.id}}" alt="">
+                    <img class="demo cursor" src="/media/{{i.img}}" style="width: 60%; height:17vh;" onclick="currentSlide(this.id)" id="{{i.id}}" alt="">
                 </div>
                 {% endfor %}
             </div>
@@ -48,82 +48,94 @@
 
         <!-- <br> -->
         <section id="detail">
-            <div class="four">
-                {% if deta %} {% for i in deta %}
-                <div class="card">
-                    <img src=" /media/{{i.img}} " alt="Avatar " style="width:100%;height:20vh ;  ">
-                    <div class="container ">
-                        <table>
-                            <thead>
-                                <th>
+            <div class="four" style="display: flex; flex-direction: column; ">
+                <div class="charinrow" style=" display: flex; height: 45vh; text-align: center;">
+                    {% if deta %} {% for i in deta|slice:'0:' %}
+                    <div class="card" style="text-align: center;">
+                        <img src=" /media/{{i.img}} " alt="Avatar " style="height:18vh ;  ">
+                        <div class="container ">
+                            <table>
+                                <thead>
+                                    <th>
+                                        <tr>
+                                            <td>
+                                                <b> Name</b>
+                                            </td>
+                                            <td>
+                                                <b>   {{i.name}} </b>
+                                            </td>
+                                        </tr>
+                                    </th>
+                                </thead>
+                                <tbody>
                                     <tr>
                                         <td>
-                                            <b> Name</b>
+                                            <b> D-O-B</b>
                                         </td>
                                         <td>
-                                            <b>   {{i.name}} </b>
+                                            {{i.age}}
                                         </td>
                                     </tr>
-                                </th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <b> D-O-B</b>
-                                    </td>
-                                    <td>
-                                        {{i.age}}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b> Relation </b>
+                                    <tr>
+                                        <td>
+                                            <b> Relation </b>
 
-                                    </td>
-                                    <td>
-                                        {{i.relation}}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Phone no. </b>
+                                        </td>
+                                        <td>
+                                            {{i.relation}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b>Phone no. </b>
 
-                                    </td>
-                                    <td>
-                                        {{i.phone}}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b> Email </b>
+                                        </td>
+                                        <td>
+                                            {{i.phone}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b> Email </b>
 
-                                    </td>
-                                    <td>
-                                        {{i.email}}
+                                        </td>
+                                        <td>
+                                            {{i.email}}
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b> Language </b>
-                                    </td>
-                                    <td>
-                                        {{i.mothertounge}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <tr>
+                                            <td>
+                                                <b> Occupation </b>
 
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                            </td>
+                                            <td>
+                                                {{i.occupation}}
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b> Language </b>
+                                            </td>
+                                            <td>
+                                                {{i.mothertounge}}
+
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <!-- {% if forloop.counter|divisibleby:1 and forloop.counter > 0 and not forloop.last %} -->
+                    {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
                 </div>
-                <!-- <div class="card ">
-                {% endif %} -->
-                {% endfor %}
-                <!-- </div> -->
+                <div class="charinrow" style=" display: flex; height: 48vh;text-align: center;">
+                    {% endif %} {% endfor %}
+                </div>
                 {% endif %}
-            </div>
         </section>
+        </div>
 
 
     </div>
