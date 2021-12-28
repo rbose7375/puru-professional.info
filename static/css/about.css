@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+section#about {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-size: 50% 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+section#about::before {
+    content: "";
+    position: absolute;
+    opacity: 1;
+    background: url('/static/img/section/bg2.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    filter: blur(1px);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.collect {
+    position: relative;
+    display: inline-flex;
+    border: 1px solid rgb(8, 8, 8);
+    box-shadow: 10px 10px 30px 10px rgb(0, 0, 0);
+}
+
+.collect::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline-flex;
+    background: #b9b8b8;
+    opacity: 1;
+    z-index: -1;
+}
+
+.collect .holdText {
+    font-size: 2.5rem;
+    font-weight: 500;
+    height: 9vh;
+    /* line-height: 75%; */
+    color: rgb(255, 255, 255);
+}
+
+.collect .movingText {
+    /* margin-left: 1%; */
+    height: 8vh;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.movingText li {
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 5px;
+    color: green;
+    position: relative;
+    top: 0;
+    animation: slide 8s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -180px;
+    }
+}
+
+.movingText li span {
+    position: relative;
+    z-index: -1;
+}
+
+.movingText li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #b9b8b8;
+    z-index: 1;
+    border: none;
+    border-left: 2px solid green;
+    animation: typing 2s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -30px 0 30px;
+    }
+}
+
+.about {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    color: white;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    background: url('/static/img/section/bg3.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    /* background: #000; */
+    filter: blur(2px);
+    /* background-size: 5; */
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+hr {
+    border-width: 1%;
+    border-color: rgb(255, 255, 255);
+}
+
+.frame {
+    position: relative;
+    left: 5%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 0.2px solid white; */
+    border-radius: 10px;
+    background-color: rgba(124, 124, 124, 0.726);
+    padding: 1%;
+    width: 40%;
+    max-height: 85.5vh;
+    color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 30px rgb(11, 100, 3); */
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.frame::before {
+    content: "";
+    position: absolute;
+    background: url('/static/img/section/bg3.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    /* padding: 10px; */
+    height: 85.5vh;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.frame:hover {
+    color: rgb(0, 0, 0);
+    /* -webkit-box-reflect: left 1px linear-gradient(transparent, #b3b3b3); */
+}
+
+.frame .resume {
+    text-align: center;
+    font-weight: bold;
+}
+
+.frame .headResume .fname {
+    font-size: 1rem;
+    /* line-height: 1.5; */
+}
+
+.frame .headResume .email {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.frame .headResume .phoneNumber {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.frame .summary {
+    font-size: 1rem;
+    /* line-height: 1.5; */
+}
+
+.frame .summaryBody {
+    font-size: 0.6rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .education {
+    font-size: 1rem;
+    /* line-height: 1.5; */
+}
+
+.frame .btech {
+    /* border: 1px solid white; */
+    font-size: 0.8rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .btech span {
+    /* border: 1px solid white; */
+    font-size: 0.7rem;
+    /* margin-left: 80%; */
+}
+
+.frame .btech p {
+    /* border: 1px solid white; */
+    font-size: 0.7rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .btech p span {
+    /* border: 1px solid white; */
+    font-size: 0.7rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+    /* margin-left: 80%; */
+}
+
+.frame .t12th {
+    font-size: 0.7rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .t12th span {
+    font-size: 0.7rem;
+    /* margin-left: 90%; */
+}
+
+.frame .t12th p {
+    font-size: 0.7rem;
+    /* line-height: 1; */
+    font-weight: 400;
+}
+
+.frame .t12th p span {
+    font-size: 0.7rem;
+    /* line-height: 1; */
+    font-weight: 400;
+    /* margin-left: 86%; */
+}
+
+.frame .t10th {
+    font-size: 0.7rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .t10th span {
+    font-size: 0.7rem;
+    /* margin-left: 90%; */
+}
+
+.frame .t10th p {
+    font-size: 0.7rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .t10th p span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    /* margin-left: 70%; */
+}
+
+.frame .project {
+    font-size: 1rem;
+    /* line-height: 1.5; */
+}
+
+.frame .project span {
+    font-size: 0.7rem;
+    font-weight: 400;
+    /* margin-left: 240px; */
+}
+
+.frame .project p {
+    font-size: 0.7rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .project .gbm {
+    font-size: 1rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .skills {
+    font-size: 1rem;
+    /* line-height: 1.5; */
+}
+
+.frame .skills .skill {
+    display: flex;
+    font-size: 0.9rem;
+    /* line-height: 1.5; */
+    font-weight: 400;
+}
+
+.frame .skills .skill .value {
+    font-size: 0.7rem;
+    font-weight: 400;
+    /* margin-left: 10px; */
+}
+
+.down {
+    cursor: pointer;
+    border-radius: 1%;
+    /* padding: 1%; */
+    border: none;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    height: 3vh;
+    background: transparent;
+    font-weight: bold;
+}
+
+.down:hover {
+    color: white;
+}
+
+.about .seprate {
+    position: relative;
+    left: 15%;
+    /* border: 2px solid white; */
+    top: 15%;
+    display: flex;
+    border-radius: 10px;
+    /* background-color: rgb(0, 0, 0); */
+    width: 30%;
+    max-height: 85.5vh;
+    /* color: rgb(255, 255, 255); */
+    /* box-shadow: 0 0 30px rgb(11, 100, 3); */
+    /* box-shadow: 0 0 30px rgb(5, 207, 243); */
+}
+
+.about .seprate a bro {
+    /* border: 2px solid white; */
+    position: absolute;
+    display: inline-block;
+    padding: 8px;
+    margin: 40% 28%;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background: url('/static/img/section/bg3.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    height: 70px;
+    width: 200px;
+    box-shadow: 0 0 10px rgb(202, 194, 194);
+    transition: 0.8s;
+    overflow: hidden;
+}
+
+.about .seprate a bro:hover {
+    color: rgb(3, 3, 3);
+    overflow: hidden;
+    background: url('/static/img/section/bg3.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 0 20px rgb(2, 2, 2);
+}
+
+bros {
+    position: absolute;
+    background: linear-gradient(90deg, green, rgb(0, 0, 0));
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: anime 1s linear infinite;
+}
+
+@keyframes anime {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.9;
+    }
+    100% {
+        width: 500px;
+        height: 420px;
+        opacity: 0;
+    }
+}
