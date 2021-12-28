@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a8b5e52 (almost done)
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fuzzy+Bubbles&display=swap');
 section#contact {
     position: relative;
@@ -304,6 +307,10 @@ section#contact .headingContact .bottn:hover::after {
     cursor: pointer;
     border: none;
     box-shadow: none;
+<<<<<<< HEAD
 }
 =======
 >>>>>>> 5ab05b1 (almost done)
+=======
+}
+>>>>>>> a8b5e52 (almost done)
