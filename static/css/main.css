@@ -212,8 +212,15 @@ section#footer {
     height: 25vh;
     color: skyblue;
     /* background: url('./../img/bg/home.jpg') no-repeat center center/cover; */
+<<<<<<< HEAD
     background: linear-gradient(45deg, rgb(39, 39, 39), rgb(20, 20, 20), black, rgb(20, 20, 20), rgb(31, 31, 31), rgb(39, 39, 39));
+<<<<<<< HEAD
 >>>>>>> a8b5e52 (almost done)
+=======
+=======
+    background: black;
+>>>>>>> 2155350 (working now long signup contact)
+>>>>>>> 959a016 (done)
     background-attachment: fixed;
 }
 

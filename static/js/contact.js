@@ -7,15 +7,16 @@
 // let data = document.getElementsByID('msg')
 // data = Array(data);
 
-function myFunction() {
-    var myobj = document.getElementById("msg");
-    myobj.remove();
-}
+// function myFunction() {
+//     var myobj = document.getElementById("msg");
+//     myobj.remove();
+// }
 
 
 function myFunctions() {
     setTimeout(function() {
         var myobj = document.getElementById("msg");
+        console.log(myobj)
         myobj.remove();
     }, 5000);
 }
