@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 10px;
+    background-color: rgb(29, 29, 29);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+    height: 39vh;
+    scroll-snap-align: center;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+    height: 82vh;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 15rem;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0px 3px 3px 0px;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    color: green;
+    background-color: rgba(59, 56, 56, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    position: relative;
+    bottom: 9vh;
+    left: 45%;
+    height: auto;
+    width: max-content;
+    text-align: center;
+    /* border: 1px solid black; */
+    font-size: 2rem;
+    background-color: rgba(34, 34, 34, 0);
+    padding: 2px 16px;
+    color: rgb(82, 13, 13);
+    box-shadow: 2px 2px 2px 2px rgb(41, 41, 43);
+    z-index: 1;
+}
+
+
+/* 
+.caption-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index: -1;
+    filter: blur(8px);
+} */
+
+a {
+    text-decoration: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+section {
+    display: none;
+    background-color: aquamarine;
+    /* margin-top: 5%;
+    margin-left: 40%; */
+    font-size: 2rem;
+    /* padding: 50px; */
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    width: 23%;
+    height: 45vh;
+    margin: 0.5rem;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    transition: 0.3s;
+    font-size: 0.8rem;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add some padding inside the card container */
+
+.container {
+    padding: 2px 16px;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.four {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(202, 188, 188);
+    border: 1px solid rgb(255, 253, 253);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.back {
+    position: absolute;
+    background-color: black;
+    border: 1px solid purple;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    text-align: center;
+    justify-content: center;
+    right: 30px;
+    bottom: 20px;
+    color: white;
+    font-size: 2rem;
+    z-index: 10;
+}
+
+.back:hover {
+    background-color: transparent;
+}

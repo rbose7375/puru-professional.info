@@ -44,6 +44,8 @@
                 </li>
             </ul>
         </nav>
+        <a href="#home" class="back">&#10094;</a>
+
         <section class="home" id="home">
             {% if messages %}
             <div class="warn" id="msg">
@@ -183,7 +185,7 @@
             </div>
             <!-- <a href="#" class="presonalButton" > <spa id="personalButton"><span></span></spa></a> -->
             <div class="seprate">
-                <a href="#" class="presonalButton">
+                <a href="personaldetail" class="presonalButton">
                     <bro>personal detail</bro>
                 </a>
             </div>
@@ -191,7 +193,13 @@
         <section class="newworld" id="newWorld">
             <div class="newContent">
                 <div class="fourSet">
-                    <a href="#">
+                    <a href="gallary">
+                        <div class="gallary">
+                            <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
+                            <div class="nameData">Gallary</div>
+                        </div>
+                    </a>
+                    <!-- <a href="#">
                         <div class="gallary">
                             <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
                             <div class="nameData">Gallary</div>
@@ -200,7 +208,9 @@
                     <a href="#">
                         <div class="gallary">
                             <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
+
                             <div class="nameData">Gallary</div>
+
                         </div>
                     </a>
                     <a href="#">
@@ -208,13 +218,7 @@
                             <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
                             <div class="nameData">Gallary</div>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="gallary">
-                            <img src="{% static 'img/bg/contact2.png' %}" height="150" alt="gallary img">
-                            <div class="nameData">Gallary</div>
-                        </div>
-                    </a>
+                    </a> -->
 
 
                 </div>
