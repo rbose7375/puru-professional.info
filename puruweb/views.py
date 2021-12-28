@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_protect
 from django.contrib import messages
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from .models import Contact, signp, personal,gallary
 =======
 from .models import Contact,signp
@@ -12,6 +13,9 @@ from .models import Contact,signp
 =======
 from .models import Contact, signp, personal
 >>>>>>> 02329d5 (tatti gallary)
+=======
+from .models import Contact, signp, personal,gallary
+>>>>>>> 5ab05b1 (almost done)
 from datetime import datetime
 
 
@@ -147,6 +151,7 @@ def Personal(request):
 
 def gallarys(request):
 
+<<<<<<< HEAD
     return render(request,'gallary.html')
 
 
@@ -276,9 +281,18 @@ def Personal(request):
     return render(request,'personal.html',params)
 
 def gallary(request):
+=======
+>>>>>>> 5ab05b1 (almost done)
     return render(request,'gallary.html')
 
 >>>>>>> 02329d5 (tatti gallary)
+
+def img(request):
+    allimg=gallary.objects.all()
+    print(allimg)
+    params={'data':allimg}
+    return render(request,'common.html',params)
+
 
 
 

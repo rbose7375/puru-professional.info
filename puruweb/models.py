@@ -40,12 +40,18 @@ class personal(models.Model):
         return self.name
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5ab05b1 (almost done)
 class gallary(models.Model):
     file=models.FileField(upload_to='gallary/')
     name=models.CharField(max_length=50,default=None)
     def __str__(self):
         return self.name
 
+<<<<<<< HEAD
 =======
 >>>>>>> 02329d5 (tatti gallary)
+=======
+>>>>>>> 5ab05b1 (almost done)
 

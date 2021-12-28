@@ -55,7 +55,12 @@ urlpatterns = [
     path('update.html/',views.home , name="update"),
     path('updat/<int:id>/',views.updat , name="updat"),
     path('personaldetail',views.Personal , name="personaldetail"),
+<<<<<<< HEAD
     path('gallary',views.gallary , name="gallary"),
     
 >>>>>>> 02329d5 (tatti gallary)
+=======
+    path('gallarys',views.gallarys , name="gallarys"),
+    path('img',views.img , name="img"),    
+>>>>>>> 5ab05b1 (almost done)
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

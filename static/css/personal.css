@@ -104,10 +104,14 @@ body {
     position: relative;
     bottom: 9vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
     text-align: center;
 =======
     left: 45%;
 >>>>>>> 02329d5 (tatti gallary)
+=======
+    text-align: center;
+>>>>>>> 5ab05b1 (almost done)
     height: auto;
     width: max-content;
     text-align: center;
@@ -120,6 +124,7 @@ body {
     z-index: 1;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -137,6 +142,8 @@ body {
 } */
 
 >>>>>>> 02329d5 (tatti gallary)
+=======
+>>>>>>> 5ab05b1 (almost done)
 a {
     text-decoration: none;
 }
@@ -153,10 +160,14 @@ a {
 .column {
     float: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 14%;
 =======
     width: 16.66%;
 >>>>>>> 02329d5 (tatti gallary)
+=======
+    width: 14%;
+>>>>>>> 5ab05b1 (almost done)
 }
 
 
@@ -187,10 +198,14 @@ section {
     /* Add shadows to create the "card" effect */
     width: 23%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 40vh;
 =======
     height: 45vh;
 >>>>>>> 02329d5 (tatti gallary)
+=======
+    height: 40vh;
+>>>>>>> 5ab05b1 (almost done)
     margin: 0.5rem;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -198,10 +213,14 @@ section {
     /* border: 1px solid black; */
     transition: 0.3s;
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 0.7rem;
 =======
     font-size: 0.8rem;
 >>>>>>> 02329d5 (tatti gallary)
+=======
+    font-size: 0.7rem;
+>>>>>>> 5ab05b1 (almost done)
 }
 
 
@@ -230,10 +249,14 @@ section {
     margin: 5%;
     width: 90%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 45vh;
 =======
     height: 90vh;
 >>>>>>> 02329d5 (tatti gallary)
+=======
+    height: 45vh;
+>>>>>>> 5ab05b1 (almost done)
     background-color: rgb(202, 188, 188);
     border: 1px solid rgb(255, 253, 253);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
